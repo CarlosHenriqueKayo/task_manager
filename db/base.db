@@ -1,0 +1,20 @@
+# Tabela "User"
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS User(
+        registro TEXT,
+        login TEXT
+    )
+''')
+
+# Tabela "Task"
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS Tarefa(
+        titulo TEXT,
+        descricao TEXT,
+        status TEXT
+        data_criacao DATETIME
+    )
+''')
+
+# Salvar alterações
+conn.commit()
